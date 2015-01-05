@@ -96,15 +96,15 @@ $\ket{jm}$ - полная общая система собственных ве�
 \label{eq:8_2_3}
 \left\{
 \begin{aligned}
-\op{\vec{j}}^2 \ket{jm} = \lambda(j) \ket{jm} \\
-\op{j}_z \ket{jm} = m \ket{jm}
+\op{\vec{j}}^2 \ket{j,m} = \lambda(j) \ket{j,m} \\
+\op{j}_z \ket{j,m} = m \ket{j,m}
 \end{aligned}
 \right.
 \end{equation}
 
 Условие ортонормировки:
 $$
-\bk{jm}{j'm'} = \delta_{jj'} \delta_{mm'}
+\bk{j,m}{j',m'} = \delta_{jj'} \delta_{mm'}
 $$
 
 $$
@@ -145,7 +145,7 @@ $m_{max} \equiv j$, тогда $m_{min} = -j$
 
 Из \eqref{eq:8_2_5}:
 $$
-\op{j_z} \brc{\op{j}_{\pm} \ket{jm}} = \brc{\op{j}_{\pm} \op{j_z} \pm \op{j}_{\pm}} \ket{jm} = (m \pm 1) \brc{\op{j}_{\pm} \ket{jm}}
+\op{j_z} \brc{\op{j}_{\pm} \ket{j,m}} = \brc{\op{j}_{\pm} \op{j_z} \pm \op{j}_{\pm}} \ket{j,m} = (m \pm 1) \brc{\op{j}_{\pm} \ket{j,m}}
 $$
 
 Будем называть $\op{j}_{+}$ \textbf{оператором повышения}, а $\op{j}_{-}$ -- \textbf{оператором понижения}
@@ -163,7 +163,7 @@ $$
 Заметим, что:
 $$
 \begin{gathered}
-\op{j}_{+} \ket{jj} = 0,~~\text{или}~~ \alpha_{j+1} = 0\\
+\op{j}_{+} \ket{j,j} = 0,~~\text{или}~~ \alpha_{j+1} = 0\\
 \op{j}_{-} \ket{j, -j} = 0,~~\text{или}~~ \beta_{-j} = 0
 \end{gathered}
 $$
@@ -172,10 +172,10 @@ $$
 $$
 \left\downarrow
 \begin{aligned}
-\op{j}_{-} \ket{jj} & \sim \ket{j, j-1}\\
-(\op{j}_{-})^2 \ket{jj} & \sim \ket{j, j-2}\\
+\op{j}_{-} \ket{j,j} & \sim \ket{j, j-1}\\
+(\op{j}_{-})^2 \ket{j,j} & \sim \ket{j, j-2}\\
 \cdots \\
-(\op{j}_{-})^N \ket{jj} & \sim \ket{j, j-N},~~~N \in \mathbb{N} \cup \brcr{0} \\
+(\op{j}_{-})^N \ket{j,j} & \sim \ket{j, j-N},~~~N \in \mathbb{N} \cup \brcr{0} \\
 \end{aligned}
 \right.
 $$
@@ -198,7 +198,7 @@ $m$ -- магнитное квантовое число
 $m_{max} = -m_{min} = j$.
 
 $$
-\op{j}_{-} \op{j}_{+} \ket{jj} = 0
+\op{j}_{-} \op{j}_{+} \ket{j,j} = 0
 $$
 $$
 \op{j}_{-} \op{j}_{+} = \op{\vec{j}}^2 - \op{j_z}^2 - \op{j_z}
@@ -208,25 +208,25 @@ $$
 \end{excr}
 
 $$
-\brc{\op{\vec{j}}^2 - \op{j_z}^2 - \op{j_z}} \ket{jj} = 0 ~~\rightarrow~~ \lambda(j) = j(j+1)
+\brc{\op{\vec{j}}^2 - \op{j_z}^2 - \op{j_z}} \ket{j,j} = 0 ~~\rightarrow~~ \lambda(j) = j(j+1)
 $$
 
 \begin{equation}
 \label{eq:8_2_7}
 \boxed {
-	\op{\vec{j}}^2 \ket{jm} = j(j+1) \ket{jm}
+	\op{\vec{j}}^2 \ket{j,m} = j(j+1) \ket{j,m}
 }
 \end{equation}
 
 Из \eqref{eq:8_2_6}:
 $$
-\alpha_m = \bfk{jm}{\op{j}_{+}}{j, m-1} = \bk{\op{j}_{-}jm}{j, m-1} = \left. \bfk{j,m-1}{\op{j}_{-}}{jm}^* \right|_{\text{\eqref{eq:8_2_6}}} = \beta_m^*
+\alpha_m = \bfk{j,m}{\op{j}_{+}}{j, m-1} = \bk{\op{j}_{-}jm}{j, m-1} = \left. \bfk{j,m-1}{\op{j}_{-}}{j,m}^* \right|_{\text{\eqref{eq:8_2_6}}} = \beta_m^*
 $$
 
 Теперь необходимо найти $\beta_{-j+1}, \beta_{-j+2}, \cdots, \beta_{j}$
 
 $$
-\left. \op{j}_{+} \op{j}_{-} \ket{jm} \right|_{\text{\eqref{eq:8_2_6}}} = \beta_m \op{j}_{+} \ket{j, m-1} = \abs{\beta_m}^2 \ket{jm}
+\left. \op{j}_{+} \op{j}_{-} \ket{j,m} \right|_{\text{\eqref{eq:8_2_6}}} = \beta_m \op{j}_{+} \ket{j, m-1} = \abs{\beta_m}^2 \ket{j,m}
 $$
 
 С другой стороны:
@@ -239,10 +239,10 @@ $$
 \end{excr}
 
 $$
-\op{j}_{+} \op{j}_{-} \ket{jm} = \left. (\op{\vec{j}}^2 - \op{j_z}^2 + \op{j_z}) \ket{jm} \right|_{\text{\eqref{eq:8_2_7}, \eqref{eq:8_2_3}}} = \brc{j(j+1) - m^2 + m} \ket{jm}
+\op{j}_{+} \op{j}_{-} \ket{j,m} = \left. (\op{\vec{j}}^2 - \op{j_z}^2 + \op{j_z}) \ket{j,m} \right|_{\text{\eqref{eq:8_2_7}, \eqref{eq:8_2_3}}} = \brc{j(j+1) - m^2 + m} \ket{j,m}
 $$
 
-Фазу $\ket{jm}$ можно подобрать так, чтобы $\alpha_m = \beta_m  = \abs{\beta_m}$
+Фазу $\ket{j,m}$ можно подобрать так, чтобы $\alpha_m = \beta_m  = \abs{\beta_m}$
 
 $$
 \beta_m = \sqrt{j^2 + j - m^2 + m} = \sqrt{(j+m)(j-m+1)} = \alpha_m
@@ -250,15 +250,15 @@ $$
 
 $$
 \begin{gathered}
-\op{j}_{-} \ket{jm} = \sqrt{(j+m)(j-m+1)} \ket{j, m-1} \\
-\op{j}_{+} \ket{jm} = \beta_{m+1} \ket{j, m+1} = \sqrt{(j-m)(j+m+1)} \ket{j, m+1}
+\op{j}_{-} \ket{j,m} = \sqrt{(j+m)(j-m+1)} \ket{j, m-1} \\
+\op{j}_{+} \ket{j,m} = \beta_{m+1} \ket{j, m+1} = \sqrt{(j-m)(j+m+1)} \ket{j, m+1}
 \end{gathered}
 $$
 
 \begin{equation}
 \label{eq:8_2_8}
 \boxed {
-	(\op{j_x} \pm i \op{j_y}) \ket{jm} = \sqrt{(j \mp m)(j \pm m + 1)} \ket{j, m \pm 1}
+	(\op{j_x} \pm i \op{j_y}) \ket{j,m} = \sqrt{(j \mp m)(j \pm m + 1)} \ket{j, m \pm 1}
 }
 \end{equation}
 
