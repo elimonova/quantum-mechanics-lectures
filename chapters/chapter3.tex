@@ -174,7 +174,7 @@ $$
 
 $F$ -- физическая (или, в терминологии Дирака, \textbf{наблюдаемая}) величина.
 
-$F$ соответствует $\op{F}$:
+$F$ соответствует оператор $\op{F}$:
 
 $$
 \begin{gathered}
@@ -233,7 +233,7 @@ $$
 \begin{enumerate}
 \item Любой оператор коммутирует с константой:
 $$
-\brs{\op{F}, c} = 0,~~ c = \const
+\brs{\op{F}, c\op{1}} = 0,~~ c = \const
 $$
 \item Если между двумя пространствами состояний есть взаимно-однозначное соответствие, т.е.:
 $$
@@ -242,14 +242,14 @@ $$
 то $\op{F}$ и $\op{G}$ являются \textbf{обратными друг к другу операторами}:
 \begin{equation}
 \label{eq:3_2_3}
-\op{F}\op{G} = \op{G}\op{F} = 1
+\op{F}\op{G} = \op{G}\op{F} = \op{1}
 \end{equation}
 Оператор, обратный к данному обозначается $\op{F}^{-1}$.
 \end{enumerate}
 
 \begin{equation}
 \label{eq:3_2_3_add}
-\op{F}\op{F}^{-1} = \op{F}^{-1}\op{F} = 1
+\op{F}\op{F}^{-1} = \op{F}^{-1}\op{F} = \op{1}
 \tag{\ref{eq:3_2_3}$'$}
 \end{equation}
 
@@ -396,10 +396,10 @@ $$
 Из \eqref{eq:2_2_1}:
 \begin{equation}
 \label{eq:3_2_11}
-\avg{(\Delta F)^2} = \bfk{\psi}{(\op{F} - \avg{F})^2}{\psi}
+\avg{(\Delta F)^2} = \bfk{\psi}{(\op{F} - \avg{F}\op{1})^2}{\psi}
 \end{equation}
 
-Заметим, что $\op{F} - \avg{F}$ -- эрмитов оператор.
+Заметим, что $\op{F} - \avg{F}\op{1}$ -- эрмитов оператор.
 
 \begin{equation}
 \label{eq:3_2_12}
@@ -586,7 +586,7 @@ $$
 \begin{equation}
 \label{eq:3_3_14}
 	\begin{gathered}
-		\avg{F} = \bfk{\psi}{\op{F}}{\psi} = \sum_m \sum_n c_m^* c_n \underbrace{ \bfk{\psi_m}{F}{\psi_n} }_{\bfk{\psi_m}{f_n}{\psi_n}~\text{из \eqref{eq:3_3_1}}} =
+		\avg{F} = \bfk{\psi}{\op{F}}{\psi} = \sum_m \sum_n c_m^* c_n \underbrace{ \bfk{\psi_m}{\op{F}}{\psi_n} }_{\bfk{\psi_m}{f_n}{\psi_n}~\text{из \eqref{eq:3_3_1}}} =
 		\sum_m \sum_n c_m^* c_n f_n \underbrace{\bk{\psi_m}{\psi_n}}_{\delta{mn}} = \\ = \boxed{\sum_n f_n \abs{c_n}^2 = \avg{F}}
 	\end{gathered}
 \end{equation}
